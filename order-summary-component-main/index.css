@@ -1,26 +1,31 @@
+/* CSS Reset */
+@import url(reset.css);
+
 body {
   background: url(images/pattern-background-desktop.svg) hsl(225, 100%, 94%);
   background-repeat: no-repeat;
-  padding: 10% 30%;
-  margin: auto;
 }
 
 .container {
-  text-align: center;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: solid none;
   width: 100%;
-  height: 500px;
-  width: 320px;
-  margin: auto;
-  background-color: #ffffff;
+  width: 375px;
+  max-width: max-content;
+  margin: 5% auto;
+  background-color: white;
 }
+/* image section */
 .head-img {
   overflow: hidden;
-  border-radius: 1rem 1rem 0px 0px;
-  align-items: center;
-  width: 320px;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+  border-radius: none;
 }
 
 p {
@@ -28,55 +33,69 @@ p {
   font-size: 16px;
 }
 
-.plan-container {
+#order-p {
   padding: 1rem;
-  background-color: hsl(225, 100%, 98%);
-  border-radius: 1rem;
-  /* width: max-content; */
-  width: 80%;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: 0 5%;
 }
 
-.left-side {
+.plan-cont {
+  position: relative;
+  page-break-inside: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: auto;
+  padding: 0;
+}
+
+.plan-container {
   display: flex;
   gap: 1rem;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.8rem;
   align-items: center;
 }
 
 #cta {
   display: flex;
-  padding-left: 2.5rem;
-  gap: 1rem;
+  padding: 0 2rem;
+  text-align: right;
+}
+
+.pricing {
+  padding: 1rem;
 }
 
 .btn {
   display: grid;
   grid-template-columns: none repeat(1 1fr);
-  gap: 5px;
+  gap: 1.5rem;
   border: none;
-  padding: 20px 30px;
+  padding: 1.5rem;
+  align-items: center;
 }
 
 #proceed-btn {
   background-color: hsl(249, 83%, 44%);
-  padding: 8px 5rem;
+  padding: .7rem 3rem;
+  align-items: center;
   border-radius: 0.5rem;
   border: none;
   color: white;
-  font-size: 11px;
+  font-size: 16px;
+  font-weight: 700;
   box-shadow: 0px 0px 5px 3px #4547df;
+  text-decoration: none;
 }
 
 #cancel-btn {
   background-color: inherit;
-  color: hsl(223, 47%, 23%);
-  padding: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 4rem;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   border: none;
 }
 
@@ -85,9 +104,6 @@ p {
 - Desaturated blue: hsl(224, 23%, 55%)
 - Dark blue: hsl(223, 47%, 23%) */
 
-a:active {
-}
-
-button {
+a:hover {
   cursor: pointer;
 }

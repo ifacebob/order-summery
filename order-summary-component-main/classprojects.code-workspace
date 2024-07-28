@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../classprojects"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "order-summary"
+  }
+}
